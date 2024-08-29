@@ -1,18 +1,9 @@
 {
   "manifest_version": 3,
-<<<<<<< HEAD
-  "name": "Direct CSS Editor",
-  "description": "Base Level Extension",
-  "version": "1.0",
-  "action": {
-    "default_icon": "css.png"
-  },
-=======
   "name": "Direct CSS Positioning Editor",
   "description": "Directly edit the open tab's CSS and move selected elements around with keystrokes",
   "version": "1.0",
   "icons": {},
->>>>>>> ccf6f4c0d551362bbf8d52a3282afa49da54b13b
   "content_scripts": [
     {
       "js": ["scripts/content.js"],
