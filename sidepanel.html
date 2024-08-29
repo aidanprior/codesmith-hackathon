@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Direct CSS Positioning Editor</h1>
+    <h2>Use this button to identify the html elements on the page</h2>
+    <button id="outline-toggle">Toggle Outlines</button>
+    <br />
+    <br />
+    <h2>
+      Double click any element to highlight it, and move it around the page with
+      W,A,S,D
+    </h2>
+    <h3>Change your movement parameters below</h3>
+    <table>
+      <tr>
+        <td><label for="units">Unit:</label></td>
+        <td>
+          <select id="units">
+            <optgroup label="Relative Lengths">
+              <option value="rem">rem</option>
+              <option value="%">Percent</option>
+              <option value="em">em</option>
+              <option value="vw">Viewport Width</option>
+              <option value="vh">Viewport Height</option>
+              <option value="vmin">Viewport Min</option>
+              <option value="vmax">Viewport Max</option>
+              <option value="ex">ex</option>
+              <option value="ch">ch</option>
+            </optgroup>
+            <optgroup label="Absolute Lengths">
+              <option value="px">Pixel</option>
+              <option value="pt">Point</option>
+              <option value="cm">Centimeter</option>
+              <option value="mm">Millimeter</option>
+              <option value="in">Inch</option>
+              <option value="pc">Pica</option>
+            </optgroup>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="unit-scale">Unit Scale:</label></td>
+        <td>
+          <input id="unit-scale" type="number" step="any" placeholder="1" />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="positioning">Position:</label></td>
+        <td>
+          <select id="positioning">
+            <option>current</option>
+            <option>relative</option>
+            <option>absolute</option>
+            <option>margin</option>
+            <option>sticky</option>
+            <option>static</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button id="params-submission">Update Parameters</button></td>
+      </tr>
+    </table>
+    <label for="css-editor">Copy or Live edit your CSS here</label>
+    <br />
+    <br />
+    <button id="copy-css">Copy CSS</button>
+    <button id="style-submission">Update Style</button>
+    <br />
+    <br />
+    <code><textarea id="css-editor"></textarea></code>
+
+    <script src="scripts/extension.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+#unit-scale {
+  width: 4rem;
+}
+
+#css-editor {
+  background-color: slategray;
+  border: inset darkgray 0.2rem;
+  width: 95vw;
+  height: 50vh;
+}
+
+button {
+  border: none;
+  border-radius: 5rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 110%;
+}
+
+table {
+  width: 95vw;
+  padding-bottom: 1rem;
+}
+
+tr {
+  padding: 0.2rem;
+}
+
+:nth-child(2 of td) {
+  text-align: right;
+}
+
+body {
+  font-size: 10pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+select {
+  min-width: 10rem;
+}

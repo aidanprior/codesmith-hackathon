@@ -4,7 +4,6 @@
   "description": "Base Level Extension",
   "version": "1.0",
   "action": {
-    "default_popup": "extension.html",
     "default_icon": "hello_extensions.png"
   },
   "content_scripts": [
@@ -12,5 +11,9 @@
       "js": ["scripts/content.js"],
       "matches": ["*://*/*"]
     }
-  ]
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "permissions": ["sidePanel"]
 }
