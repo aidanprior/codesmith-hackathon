@@ -1,11 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Hello Extensions of the World!",
-  "description": "Base Level Extension",
+  "name": "Direct CSS Positioning Editor",
+  "description": "Directly edit the open tab's CSS and move selected elements around with keystrokes",
   "version": "1.0",
-  "action": {
-    "default_icon": "hello_extensions.png"
-  },
+  "icons": {},
   "content_scripts": [
     {
       "js": ["scripts/content.js"],
