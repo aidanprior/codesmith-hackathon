@@ -4,10 +4,22 @@
 //          show style for current element
 //          remove all other outlines.
 //      listen for arrow key events and adjust the positioning based on the direction
-console.log('running content.js');
-document
-  .querySelectorAll('*')
-  .forEach((element) => (element.style.outline = '1px red solid')); // add this to a button from the extension?
+
+let showOutlines = true;
+function toggleOutlines() {
+  console.log('within toggle outlines');
+  document
+    .querySelectorAll('*')
+    .forEach(
+      (element) =>
+        (element.style.outline = showOutlines ? '1px red solid' : 'none')
+    );
+  showOutlines = !showOutlines;
+}
+
+chrome.runtime.onMessage.addListener(function (request) {
+  if (request === 'toggleOutlines') toggleOutlines();
+});
 
 let selectedElement;
 let backgroundStorage; // used to put the same background color back after the user deselects
