@@ -29,7 +29,6 @@ document.getElementById('style-submission').addEventListener('click', () => {
   for (const [_, key, value] of editor.value.matchAll(regex)) {
     styleObj[key] = value;
   }
-  console.log(styleObj);
   sendToActiveTab('style', styleObj);
 });
 
